@@ -4,8 +4,6 @@ on:
     branches: [ master ]
 
 jobs:
-  # Run Unit Tests etc before Generating APK here.
-  # ....
 
   # A job to generate debug APK and upload on Github Artifacts
   apk:
