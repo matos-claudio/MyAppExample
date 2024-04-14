@@ -21,6 +21,10 @@ jobs:
       - name: Build APK
         run: ./gradlew assembleRelease
 
+      - name: Get release file apk path
+        id: releaseApk
+        run: echo "apkfile=$(find app/build/outputs/apk/debug/*.apk)" >> $GITHUB_OUTPUT
+
       - name: Upload APK
         uses: actions/upload-artifact@v2
         with:
