@@ -4,7 +4,6 @@ on:
     branches: [ master ]
 
 jobs:
-
   # A job to generate debug APK and upload on Github Artifacts
   apk:
     name: Generate APK
