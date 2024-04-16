@@ -5,13 +5,12 @@ on:
 
 jobs:
   # A job to generate debug APK and upload on Github Artifacts
-  apk:
-    name: Generate APK
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
       - uses: actions/checkout@v4.1.0
+
       - name: set up JDK
         uses: actions/setup-java@v3.13.0
         with:
